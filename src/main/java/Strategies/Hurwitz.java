@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Hurwitz implements Criteria{
+public class Hurwitz implements Criteria {
 
     private DoubleMatrix matrix;
-    private Double multiplier;
+    private Double c;
 
-    public Hurwitz(DoubleMatrix matrix, Double multiplier) {
+    public Hurwitz(DoubleMatrix matrix, Double c) {
         this.matrix = matrix;
-        this.multiplier = multiplier;
+        this.c = c;
     }
 
     /**
@@ -26,7 +26,7 @@ public class Hurwitz implements Criteria{
         for (int i = 0; i < matrix.getRows(); i++) {
             max = matrix.getRow(i).max();
             min = matrix.getRow(i).min();
-            values.add(multiplier * min + (1 - multiplier) * max);
+            values.add(c * min + (1 - c) * max);
         }
         return Collections.max(values);
     }

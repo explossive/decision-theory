@@ -1,11 +1,13 @@
+package helper;
+
 import org.jblas.DoubleMatrix;
 
-class Helper {
+public class MartixHelper {
 
     /**
      * @return void
      */
-    static void printMatrix(DoubleMatrix matrix) {
+    public static void printMatrix(DoubleMatrix matrix) {
         for (int i = 0; i < matrix.getRows(); i++) {
             System.out.println(matrix.getRow(i));
         }
