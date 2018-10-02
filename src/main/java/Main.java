@@ -11,6 +11,18 @@ public class Main {
 
     private final static double c = 0.11;
 
+    /**
+     * @return DoubleMatrix
+     */
+    private static DoubleMatrix getMatrix() {
+        return new DoubleMatrix(new double[][]{
+                {15, 10, 0, -6, 17},
+                {3, 14, 8, 9, 2},
+                {1, 5, 14, 20, -3},
+                {7, 19, 10, 2, 0}
+        });
+    }
+
     public static void main(String[] args) {
         DoubleMatrix matrix = getMatrix();
 
@@ -24,15 +36,4 @@ public class Main {
         System.out.println(sevidg.getOptimalSolution());
     }
 
-    /**
-     * @return DoubleMatrix
-     */
-    private static DoubleMatrix getMatrix() {
-        return new DoubleMatrix(new double[][]{
-                {15, 10, 0, -6, 17},
-                {3, 14, 8, 9, 2},
-                {1, 5, 14, 20, -3},
-                {7, 19, 10, 2, 0}
-        });
-    }
 }
