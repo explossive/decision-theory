@@ -1,6 +1,4 @@
-package Strategies;
-
-import org.jblas.DoubleMatrix;
+package main.Strategies;
 
 public interface Criteria {
 

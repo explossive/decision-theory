@@ -1,6 +1,5 @@
-package Strategies;
+package main.Strategies;
 
-import helper.MartixHelper;
 import org.jblas.DoubleMatrix;
 
 import java.util.ArrayList;
