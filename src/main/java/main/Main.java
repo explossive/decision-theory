@@ -1,9 +1,9 @@
 package main;
 
-import main.Strategies.Criteria;
-import main.Strategies.Hurwitz;
-import main.Strategies.Minimax;
-import main.Strategies.Sevidg;
+import main.criteria.Criteria;
+import main.criteria.Hurwitz;
+import main.criteria.Minimax;
+import main.criteria.Sevidg;
 import main.helper.MartixHelper;
 import org.jblas.DoubleMatrix;
 
@@ -68,5 +68,4 @@ public class Main {
         System.out.println("Оптимальная ожидаемая прибыль ");
         System.out.println(mercedesCalculatorDto.optimalSolution);
     }
-
 }

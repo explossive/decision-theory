@@ -1,4 +1,4 @@
-package main.Strategies;
+package main.criteria;
 
 import org.jblas.DoubleMatrix;
 
